@@ -1,0 +1,59 @@
+Arguments: 
+  /usr/local/Cellar/node/10.8.0/bin/node /usr/local/bin/yarn install --ignore-engines
+
+PATH: 
+  /anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+
+Yarn version: 
+  1.12.3
+
+Node version: 
+  10.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, mkdir '/Users/HelyFera/Documents/dev/project/node_modules/@babel/highlight/node_modules/js-tokens'
+
+npm manifest: 
+  {
+    "name": "parcel-demo",
+    "version": "1.0.0",
+    "description": "Boilerplate for a simple parcel based web app",
+    "main": "index.js",
+    "scripts": {
+      "prestart": "rimraf build/*",
+      "start": "parcel src/index.html -d build/",
+      "prebuild": "rimraf dist/*",
+      "build": "parcel build src/index.html --public-url ./",
+      "watch": "parcel watch src/index.html -d build/",
+      "lint": "eslint *.js src/**/*.js"
+    },
+    "author": "Shane T",
+    "license": "GPL-2.0",
+    "devDependencies": {
+      "babel-core": "^6.26.3",
+      "babel-eslint": "^8.2.3",
+      "babel-preset-env": "^1.7.0",
+      "eslint": "^4.19.1",
+      "eslint-config-airbnb": "16.1.0",
+      "eslint-plugin-compat": "^2.4.0",
+      "eslint-plugin-import": "^2.12.0",
+      "eslint-plugin-jsx-a11y": "^6.0.3",
+      "eslint-plugin-react": "^7.9.1",
+      "node-sass": "^4.9.0",
+      "parcel-bundler": "^1.8.1",
+      "rimraf": "^2.6.2"
+    },
+    "dependencies": {},
+    "resolutions": {
+      "browserslist": "^3.0.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
